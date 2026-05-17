@@ -4,7 +4,7 @@ A Flutter **web** app that lets you log how you feel, see your past 7 entries in
 
 ## Live Demo
 
-> 🌐 **[mood-tracker.web.app](https://mood-tracker.web.app)** *(deploy link after Firebase Hosting setup)*
+> 🌐 **[mood-tracker.web.app](https://flutter-learning-e6270.web.app/)** *(deploy link after Firebase Hosting setup)*
 
 ## Features
 

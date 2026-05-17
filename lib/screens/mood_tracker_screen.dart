@@ -555,7 +555,7 @@ class _MoodTrackerScreenState extends State<MoodTrackerScreen>
 
   Widget _buildTimeline(List<MoodEntry> entries) {
     return SizedBox(
-      height: 178,
+      height: 186,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: entries.length,

@@ -85,7 +85,7 @@ class _TimelineCardState extends State<TimelineCard>
         onTap: _handleTap,
         child: Container(
           width: 110,
-          margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+          margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(20),
@@ -112,7 +112,7 @@ class _TimelineCardState extends State<TimelineCard>
                     top: Radius.circular(18),
                   ),
                 ),
-                padding: const EdgeInsets.symmetric(vertical: 6),
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 child: Center(
                   child: Text(
                     dateLabel,
@@ -129,12 +129,12 @@ class _TimelineCardState extends State<TimelineCard>
 
               // Face.
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: AnimatedBuilder(
                   animation: _bounceAnim,
                   builder: (context, _) => MoodFaceWidget(
                     mood: entry.mood,
-                    size: 58,
+                    size: 54,
                     animationValue: _bounceAnim.value,
                   ),
                 ),
@@ -149,7 +149,7 @@ class _TimelineCardState extends State<TimelineCard>
                   color: widget.entry.color,
                 ),
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: 3),
 
               // Time.
               Text(
@@ -159,7 +159,7 @@ class _TimelineCardState extends State<TimelineCard>
                   color: Colors.grey.shade500,
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 8),
             ],
           ),
         ),

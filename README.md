@@ -53,8 +53,7 @@ Each face is drawn in `MoodFacePainter.paint()`:
 
 ## One Thing I'd Improve
 
-With more time I'd add a **mood statistics panel** — a small bar chart (using `CustomPainter`) showing the distribution of moods over the past 30 days, so users can spot patterns like "I'm sad more often on Mondays."
-
+If I had more time to work on this project, the main thing I would improve is the data persistence layer. While SharedPreferences works great for this simple MVP, it's not ideal for querying large datasets over time. I would migrate to a local database like Hive or Isar, or even sync it to Firebase Firestore. That way, I could easily add a statistics dashboard to show users their mood trends over a month or year.
 ## Running Locally
 
 ```bash
